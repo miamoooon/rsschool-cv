@@ -1,6 +1,6 @@
                                                             RS School CV
 
-####Maria Asimov
+### Maria Asimov
 
 **Personal Information**
 
