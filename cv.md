@@ -1,4 +1,4 @@
-                                                               RS Shool CV
+                                                            RS School CV
 
 ####Maria Asimov
 
