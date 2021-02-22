@@ -5,7 +5,7 @@
 **Personal Information**
 
 - Adress: 4 Kirill Turovsky, apt. 109, Minsk, Belarus
-- Telephone: +375 (33) 696-65-43
+- Telephone: +375 (33) 697-65-43
 - Email: <mia.mamontova@yandex.ru>
 
 **Job Objective**
