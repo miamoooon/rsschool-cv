@@ -14,12 +14,11 @@
         padding: 50px 40px 40px 40px;
         background-color: rgb(245, 245, 245);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        /*border: 0.5px #a70d02 solid;*/
       }
-      /*header,
-      footer {
-       padding: 50px 60px -10px 60px;
-      }*/
+
+      .sectionview {
+        padding: 70px 0px 0px 0px;
+      }
       h1 {
         margin: 30px 0px 0px 200px;
         font-size: 37px;
@@ -40,7 +39,7 @@
         height: 160px;
         float: left;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        margin: 50px 40px;
+        margin: 50px 40px 20px 40px;
       }
       .fontheader {
         font-family: "Source Sans Pro", serif;
@@ -60,7 +59,7 @@
         <h1 class="fontheader">Maria Asimov</h1>
         <h2 class="fontheader">Front-end Developer</h2>
       </section>
-      <section>
+      <section class="sectionview">
         <h3 class="fontheader">Personal Information</h3>
         <p class="fonttext">
           <strong> Address: </strong>4 Kirill Turovsky, apt. 109, Minsk,
@@ -80,6 +79,42 @@
         </p>
       </section>
       <section>
+        <h3 class="fontheader">Professional Skils</h3>
+        <ul class="fonttext">
+         <li>HTML, CSS</li> 
+         <li>JS</li>
+         <li>C#</li>
+         <li>XAML</li>
+         <li>WPF, Console Application, Window Application</li>
+         <li>VS Code</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="fontheader">Code Example</h3>
+        <pre class="fonttext"><span style='color:#800000; '>function</span> fizzbuzz<span style='color:#808030; '>(</span>n<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+          <span style='color:#800000;  '>var</span> arr <span style='color:#808030; '>=</span> <span style='color:#808030; '>[</span><span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
+          <span style='color:#800000; '>for</span> <span style='color:#808030; '>(</span><span style='color:#800000;'>let</span> i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;=</span> n<span style='color:#800080; '>;</span> i<span style='color:#808030; '>++</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+            arr<span style='color:#808030; '>.</span>push<span style='color:#808030; '>(</span>i<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            <span style='color:#800000;  '>if</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>3</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span> <span style='color:#808030; '>&amp;&amp;</span> i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>5</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+              arr<span style='color:#808030; '>[</span>i <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>FizzBuzz</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+            <span style='color:#800080; '>}</span> <span style='color:#800000;  '>else</span> <span style='color:#800000;  '>if</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>5</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+              arr<span style='color:#808030; '>[</span>i <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>Buzz</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+            <span style='color:#800080; '>}</span> <span style='color:#800000; '>else</span> <span style='color:#800000;  '>if</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>3</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
+              arr<span style='color:#808030; '>[</span>i <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>Fizz</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
+            <span style='color:#800080; '>}</span>
+          <span style='color:#800080; '>}</span>
+          <span style='color:#800000; '>return</span> arr<span style='color:#800080; '>;</span>
+        <span style='color:#800080; '>}</span>
+        </pre>
+      </section>
+      <section>
+        <h3 class="fontheader">Work Experience</h3>
+        <p class="fonttext">
+          - No work experience<br>
+          - I'm on a course FreeCodeCamp at the moment
+          </p>
+      </section> 
+      <section>
         <h3 class="fontheader">Education</h3>
         <p class="fonttext">
           Kazan State Power Engineering University (KSPEU) <br />
@@ -87,6 +122,7 @@
           Bachelor’s degree in Applied Mathematics (2015 – 2019)
         </p>
       </section>
+    </section>
       <section>
         <h3 class="fontheader">Languages</h3>
 
