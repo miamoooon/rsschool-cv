@@ -19,14 +19,11 @@
         padding: 70px 0px 0px 0px;
       }
       .footerview {
-        background-color: rgb(245, 245, 245);
-        padding: 10px 40px 10px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(240, 240, 240);
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-      }
-      .mygithub{
-       margin: 35px 0px; 
-        font-size: 25px;
-        float: right;
       }
       h1 {
         margin: 30px 0px 0px 200px;
@@ -37,9 +34,21 @@
         font-size: 25px;
         color: #a60000;
       }
+      .syntax_simbol {
+        color: #019101;
+      }
+      .syntax_string {
+        color: #1414f8;
+      }
+      .syntax_keyword {
+        color: #b10202;
+      }
+      .syntax {
+        color: #a702a7;
+      }
       .imglogo {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
       }
       .imgphoto {
         border-radius: 50%;
@@ -60,7 +69,7 @@
   </head>
   <body class="view">
     <header>
-      <img class="imgphoto" src="myphoto.jpg" alt="myphoto" />
+      <figure><img class="imgphoto" src="myphoto.jpg" alt="myphoto" /></figure>
     </header>
     <main class="contentview">
       <section>
@@ -69,13 +78,17 @@
       </section>
       <section class="sectionview">
         <h3 class="fontheader">Personal Information</h3>
-        <p class="fonttext">
-          <strong> Address: </strong>4 Kirilla Turovskogo, apt. 109, Minsk,
-          Belarus<br />
-          <strong>Telephone:</strong> +375 (33) 697-65-43<br />
-          <strong> Email:</strong>
-          <a href="mailto: mia.mamontova@yandex.ru">mia.mamontova@yandex.ru</a>
-        </p>
+        <ul class="fonttext">
+          <li>
+            <strong> Address: </strong>4 Kirilla Turovskogo, apt. 109, Minsk,
+            Belarus
+          </li>
+          <li><strong>Telephone:</strong> +375 (33) 697-65-43</li>
+          <li>
+            <strong> Email:</strong>
+            <a href="mailto:mia.mamontova@yandex.ru">mia.mamontova@yandex.ru</a>
+          </li>
+        </ul>
       </section>
       <section>
         <h3 class="fontheader">Job Objective</h3>
@@ -89,39 +102,40 @@
       <section>
         <h3 class="fontheader">Professional Skils</h3>
         <ul class="fonttext">
-         <li>HTML, CSS</li> 
-         <li>JS</li>
-         <li>C#</li>
-         <li>XAML</li>
-         <li>WPF, Console Application, Window Application</li>
-         <li>VS Code</li>
+          <li>HTML, CSS</li>
+          <li>JS</li>
+          <li>C#</li>
+          <li>XAML</li>
+          <li>WPF, Console Application, Window Application</li>
+          <li>VS Code</li>
         </ul>
       </section>
       <section>
         <h3 class="fontheader">Code Example</h3>
-        <pre class="fonttext"><span style='color:#800000; '>function</span> fizzbuzz<span style='color:#808030; '>(</span>n<span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
-          <span style='color:#800000;  '>var</span> arr <span style='color:#808030; '>=</span> <span style='color:#808030; '>[</span><span style='color:#808030; '>]</span><span style='color:#800080; '>;</span>
-          <span style='color:#800000; '>for</span> <span style='color:#808030; '>(</span><span style='color:#800000;'>let</span> i <span style='color:#808030; '>=</span> <span style='color:#008c00; '>1</span><span style='color:#800080; '>;</span> i <span style='color:#808030; '>&lt;=</span> n<span style='color:#800080; '>;</span> i<span style='color:#808030; '>++</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
-            arr<span style='color:#808030; '>.</span>push<span style='color:#808030; '>(</span>i<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
-            <span style='color:#800000;  '>if</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>3</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span> <span style='color:#808030; '>&amp;&amp;</span> i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>5</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
-              arr<span style='color:#808030; '>[</span>i <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>FizzBuzz</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
-            <span style='color:#800080; '>}</span> <span style='color:#800000;  '>else</span> <span style='color:#800000;  '>if</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>5</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
-              arr<span style='color:#808030; '>[</span>i <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>Buzz</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
-            <span style='color:#800080; '>}</span> <span style='color:#800000; '>else</span> <span style='color:#800000;  '>if</span> <span style='color:#808030; '>(</span>i <span style='color:#808030; '>%</span> <span style='color:#008c00; '>3</span> <span style='color:#808030; '>==</span> <span style='color:#008c00; '>0</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span>
-              arr<span style='color:#808030; '>[</span>i <span style='color:#808030; '>-</span> <span style='color:#008c00; '>1</span><span style='color:#808030; '>]</span> <span style='color:#808030; '>=</span> <span style='color:#800000; '>"</span><span style='color:#0000e6; '>Fizz</span><span style='color:#800000; '>"</span><span style='color:#800080; '>;</span>
-            <span style='color:#800080; '>}</span>
-          <span style='color:#800080; '>}</span>
-          <span style='color:#800000; '>return</span> arr<span style='color:#800080; '>;</span>
-        <span style='color:#800080; '>}</span>
+        <pre class="fonttext">
+          <span class="syntax_keyword">function</span> fizzbuzz<span>(</span>n<span >)</span> <span class="syntax">{</span>
+          <span class="syntax_keyword">var</span> arr <span class="syntax_simbol">=</span> <span class="syntax_simbol">[</span><span class="syntax_simbol">]</span><span class="syntax">;</span>
+          <span>for</span> <span class="syntax_simbol">(</span><span class="syntax_keyword">let</span> i <span class="syntax_simbol">=</span> <span class="syntax_simbol">1</span><span class="syntax">;</span> i <span class="syntax_simbol">&lt;=</span> n<span class="syntax">;</span> i<span class="syntax_simbol">++</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+            arr<span class="syntax_simbol">.</span>push<span class="syntax_simbol">(</span>i<span class="syntax_simbol">)</span><span class="syntax">;</span>
+            <span class="syntax_keyword">if</span> <span class="syntax_simbol">(</span>i <span class="syntax_simbol">%</span> <span class="syntax_simbol">3</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span> <span class="syntax_simbol">&amp;&amp;</span> i <span class="syntax_simbol">%</span> <span class="syntax_simbol">5</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+              arr<span class="syntax_simbol">[</span>i <span class="syntax_simbol">-</span> <span class="syntax_simbol">1</span><span class="syntax_simbol">]</span> <span class="syntax_simbol">=</span> <span class="syntax_keyword">"</span><span class="syntax_string">FizzBuzz</span><span class="syntax_keyword">"</span><span class="syntax">;</span>
+            <span class="syntax">}</span> <span class="syntax_keyword">else</span> <span class="syntax_keyword">if</span> <span class="syntax_simbol">(</span>i <span class="syntax_simbol">%</span> <span class="syntax_simbol">5</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+              arr<span class="syntax_simbol">[</span>i <span class="syntax_simbol">-</span> <span class="syntax_simbol">1</span><span class="syntax_simbol">]</span> <span class="syntax_simbol">=</span> <span class="syntax_keyword">"</span><span class="syntax_string">Buzz</span><span class="syntax_keyword">"</span><span class="syntax">;</span>
+            <span class="syntax">}</span> <span class="syntax_keyword">else</span> <span class="syntax_keyword">if</span> <span class="syntax_simbol">(</span>i <span class="syntax_simbol">%</span> <span class="syntax_simbol">3</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+              arr<span class="syntax_simbol">[</span>i <span class="syntax_simbol">-</span> <span class="syntax_simbol">1</span><span class="syntax_simbol">]</span> <span class="syntax_simbol">=</span> <span class="syntax_keyword">"</span><span class="syntax_string">Fizz</span><span class="syntax_keyword">"</span><span class="syntax">;</span>
+            <span class="syntax">}</span>
+          <span class="syntax">}</span>
+          <span class="syntax_keyword">return</span> arr<span class="syntax">;</span>
+        <span class="syntax">}</span>
         </pre>
       </section>
       <section>
         <h3 class="fontheader">Work Experience</h3>
         <p class="fonttext">
-          - No work experience<br>
+          - No work experience<br />
           - I'm on a course FreeCodeCamp at the moment
-          </p>
-      </section> 
+        </p>
+      </section>
       <section>
         <h3 class="fontheader">Education</h3>
         <p class="fonttext">
@@ -130,26 +144,27 @@
           Bachelor’s degree in Applied Mathematics (2015 – 2019)
         </p>
       </section>
-    </section>
       <section>
         <h3 class="fontheader">Languages</h3>
-
         <ul class="fonttext">
           <li>Native Russian</li>
           <li>A2 English</li>
         </ul>
       </section>
     </main>
-    <footer class="footerview">
-      <section class="fontheader">
+    <footer>
+      <section class="footerview">
         <a href="https://rs.school/js/"
           ><img
             class="imglogo"
             src="https://rs.school/images/rs_school_js.svg"
             alt="logo"
         /></a>
-        <a class="mygithub" href="https://github.com/miaasimov">GitHub Account</a>
-    </section>
+        <h4 class="fonttext">2021</h4>
+        <a href="https://github.com/miaasimov"
+          ><img class="imglogo" src="github.png" alt="mygithub"
+        /></a>
+      </section>
     </footer>
   </body>
 </html>
