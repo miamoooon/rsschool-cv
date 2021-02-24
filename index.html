@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rs School CV</title>
+    <meta charset="utf-8" />
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600);
+      .view {
+        width: 900px;
+        margin: auto;
+        background-color: white;
+      }
+      .contentview {
+        padding: 50px 40px 40px 40px;
+        background-color: rgb(245, 245, 245);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .sectionview {
+        padding: 70px 0px 0px 0px;
+      }
+      .footerview {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(240, 240, 240);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+      h1 {
+        margin: 30px 0px 0px 200px;
+        font-size: 37px;
+      }
+      h2 {
+        margin: 2px 0px 0px 200px;
+        font-size: 25px;
+        color: #a60000;
+      }
+      .syntax_simbol {
+        color: #019101;
+      }
+      .syntax_string {
+        color: #1414f8;
+      }
+      .syntax_keyword {
+        color: #b10202;
+      }
+      .syntax {
+        color: #a702a7;
+      }
+      .imglogo {
+        width: 80px;
+        height: 80px;
+      }
+      .imgphoto {
+        border-radius: 50%;
+        width: 165px;
+        height: 160px;
+        float: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin: 50px 40px 20px 40px;
+      }
+      .fontheader {
+        font-family: "Source Sans Pro", serif;
+      }
+      .fonttext {
+        font-family: "Roboto Mono", serif;
+        color: #1b252e;
+      }
+    </style>
+  </head>
+  <body class="view">
+    <header>
+      <figure><img class="imgphoto" src="myphoto.jpg" alt="myphoto" /></figure>
+    </header>
+    <main class="contentview">
+      <section>
+        <h1 class="fontheader">Maria Asimov</h1>
+        <h2 class="fontheader">Front-end Developer</h2>
+      </section>
+      <section class="sectionview">
+        <h3 class="fontheader">Personal Information</h3>
+        <ul class="fonttext">
+          <li>
+            <strong> Address: </strong>4 Kirilla Turovskogo, apt. 109, Minsk,
+            Belarus
+          </li>
+          <li><strong>Telephone:</strong> +375 (33) 697-65-43</li>
+          <li>
+            <strong> Email:</strong>
+            <a href="mailto:mia.mamontova@yandex.ru">mia.mamontova@yandex.ru</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="fontheader">Job Objective</h3>
+        <p class="fonttext">
+          I want to obtain a position as an front-end developer. I have no work
+          experience but I have willingness to learn. I'm ability to work
+          efficiently both individually / in a team and creative thinking
+          skills. I'm diligent, determined, initiative and versatile.
+        </p>
+      </section>
+      <section>
+        <h3 class="fontheader">Professional Skils</h3>
+        <ul class="fonttext">
+          <li>HTML, CSS</li>
+          <li>JS</li>
+          <li>C#</li>
+          <li>XAML</li>
+          <li>WPF, Console Application, Window Application</li>
+          <li>VS Code</li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="fontheader">Code Example</h3>
+        <pre class="fonttext">
+          <span class="syntax_keyword">function</span> fizzbuzz<span>(</span>n<span >)</span> <span class="syntax">{</span>
+          <span class="syntax_keyword">var</span> arr <span class="syntax_simbol">=</span> <span class="syntax_simbol">[</span><span class="syntax_simbol">]</span><span class="syntax">;</span>
+          <span>for</span> <span class="syntax_simbol">(</span><span class="syntax_keyword">let</span> i <span class="syntax_simbol">=</span> <span class="syntax_simbol">1</span><span class="syntax">;</span> i <span class="syntax_simbol">&lt;=</span> n<span class="syntax">;</span> i<span class="syntax_simbol">++</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+            arr<span class="syntax_simbol">.</span>push<span class="syntax_simbol">(</span>i<span class="syntax_simbol">)</span><span class="syntax">;</span>
+            <span class="syntax_keyword">if</span> <span class="syntax_simbol">(</span>i <span class="syntax_simbol">%</span> <span class="syntax_simbol">3</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span> <span class="syntax_simbol">&amp;&amp;</span> i <span class="syntax_simbol">%</span> <span class="syntax_simbol">5</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+              arr<span class="syntax_simbol">[</span>i <span class="syntax_simbol">-</span> <span class="syntax_simbol">1</span><span class="syntax_simbol">]</span> <span class="syntax_simbol">=</span> <span class="syntax_keyword">"</span><span class="syntax_string">FizzBuzz</span><span class="syntax_keyword">"</span><span class="syntax">;</span>
+            <span class="syntax">}</span> <span class="syntax_keyword">else</span> <span class="syntax_keyword">if</span> <span class="syntax_simbol">(</span>i <span class="syntax_simbol">%</span> <span class="syntax_simbol">5</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+              arr<span class="syntax_simbol">[</span>i <span class="syntax_simbol">-</span> <span class="syntax_simbol">1</span><span class="syntax_simbol">]</span> <span class="syntax_simbol">=</span> <span class="syntax_keyword">"</span><span class="syntax_string">Buzz</span><span class="syntax_keyword">"</span><span class="syntax">;</span>
+            <span class="syntax">}</span> <span class="syntax_keyword">else</span> <span class="syntax_keyword">if</span> <span class="syntax_simbol">(</span>i <span class="syntax_simbol">%</span> <span class="syntax_simbol">3</span> <span class="syntax_simbol">==</span> <span class="syntax_simbol">0</span><span class="syntax_simbol">)</span> <span class="syntax">{</span>
+              arr<span class="syntax_simbol">[</span>i <span class="syntax_simbol">-</span> <span class="syntax_simbol">1</span><span class="syntax_simbol">]</span> <span class="syntax_simbol">=</span> <span class="syntax_keyword">"</span><span class="syntax_string">Fizz</span><span class="syntax_keyword">"</span><span class="syntax">;</span>
+            <span class="syntax">}</span>
+          <span class="syntax">}</span>
+          <span class="syntax_keyword">return</span> arr<span class="syntax">;</span>
+        <span class="syntax">}</span>
+        </pre>
+      </section>
+      <section>
+        <h3 class="fontheader">Work Experience</h3>
+        <p class="fonttext">
+          - No work experience<br />
+          - I'm on a course FreeCodeCamp at the moment
+        </p>
+      </section>
+      <section>
+        <h3 class="fontheader">Education</h3>
+        <p class="fonttext">
+          Kazan State Power Engineering University (KSPEU) <br />
+          Department of Informational Technologies and Economics <br />
+          Bachelor’s degree in Applied Mathematics (2015 – 2019)
+        </p>
+      </section>
+      <section>
+        <h3 class="fontheader">Languages</h3>
+        <ul class="fonttext">
+          <li>Native Russian</li>
+          <li>A2 English</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section class="footerview">
+        <a href="https://rs.school/js/"
+          ><img
+            class="imglogo"
+            src="https://rs.school/images/rs_school_js.svg"
+            alt="logo"
+        /></a>
+        <h4 class="fonttext">2021</h4>
+        <a href="https://github.com/miaasimov"
+          ><img class="imglogo" src="github.png" alt="mygithub"
+        /></a>
+      </section>
+    </footer>
+  </body>
+</html>
