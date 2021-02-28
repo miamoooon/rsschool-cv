@@ -1,5 +1,5 @@
 # rsschool-cv
 
-https://miaasimov.github.io/rsschool-cv/cv
+Markdown & Git: https://miaasimov.github.io/rsschool-cv/cv
 
-https://miaasimov.github.io/rsschool-cv/
+HTML & CSS://miaasimov.github.io/rsschool-cv/
